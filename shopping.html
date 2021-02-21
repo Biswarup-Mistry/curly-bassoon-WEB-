@@ -1,0 +1,57 @@
+<HTML>
+<HEAD>
+	<TITLE>
+		Cart.com
+	</TITLE>
+<H1>OLINE SHOPPING</H1>
+
+</HEAD>
+<BODY>
+<lable>
+	Enter Item :
+</lable>
+<br>
+<input type="text" id="text1">
+<br>
+<input type="Button" value="ADD" onclick="add()">
+<br>
+<input type="Button" value="DELETE" onclick="remove()">
+<br>
+<script language="javascript">
+	var i=0;
+	function add(){
+		var x;
+		x=(document.getElementById("text1").value);
+		//y=(document.getElementById("text2").value);
+		if(x.length==0)
+			alert("Enter the Data(s) !");
+		else{
+			opt=new Option(x);
+			document.getElementById("op").options[i]=opt;
+			i++;
+		}
+	}
+
+	function remove(){
+		if(document.getElementById("op").selectedIndex==-1)
+			alert("No Item Selected !");
+		else{
+			ind = document.getElementById("op").selectedIndex+1;
+			while(ind<i){
+				opt=new Option(document.getElementById("op").options[ind].value);
+				document.getElementById("op").options[ind-1]=opt;
+				ind=ind+1;
+			}
+			document.getElementById("op").options[ind-1]=null;
+			i=i-1;
+		}
+	}
+</script>
+
+<select id = "op" multiple>
+	<option value="Empty">
+</select>
+<br>
+
+</BODY>
+</HTML>

@@ -1,0 +1,45 @@
+<HTML>
+<HEAD>
+	<TITLE>
+		CS
+	</TITLE>
+<H1>Online Computer Science Class</H1>
+
+</HEAD>
+<BODY>
+1st Web Page designing by Biswarup Mistry. Sem - Vth, Year - 3rd, College - Bhairab Ganguly College.
+<br>
+Sum of Two integers : 
+<br>
+<lable>Enter first number</lable>
+<br>
+<input type="text" id="text1">
+<br>
+<lable>Enter second number</lable>
+<br>
+<input type="text" id="text2">
+<br>
+<input type="button" value="sum" onclick="sum()">
+<br>
+
+<script language="javascript">
+	function sum(){
+		var x,y,r;
+		x=(document.getElementById("text1").value);
+		y=(document.getElementById("text2").value);
+		if(x.length==0 || y.length==0)
+			alert("Enter the Data(s) !");
+		else{
+			r=Number(x)+Number(y); 
+			document.getElementById("res").value=r;
+		}
+	}
+</script>
+
+
+<lable>Result : </lable>
+<br>
+<input type="text" id="res">
+<br>
+</BODY>
+</HTML>
