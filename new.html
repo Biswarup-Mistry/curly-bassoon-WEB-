@@ -1,0 +1,85 @@
+<HTML>
+	<HEAD>
+		<TITLE>
+			booking.com
+		</TITLE>
+	<H1>Online Hotel Booking</H1>
+
+	</HEAD>
+	<BODY>
+	<lable>
+		Enter Room Charges :
+	</lable>
+	<br>
+	<input type="text" id="text1" onchange="calculate()">
+	<br>
+	<lable>
+		Enter Some additional options :
+	</lable>
+	<br>
+	<label>Lunch(Rs. 300)</label>
+	<input type="checkbox" onchange="updateLunch()" id="c1">
+	<br> 
+	<label>Dinner(Rs. 500)</label>
+	<input type="checkbox" onchange="updateDinner()" id="c2">
+	<br>
+	<label>BreakFast(Rs. 100)</label>
+	<input type="checkbox" onchange="updateBfast()" id="c3">
+	<br>
+	<label>Snacks(Rs. 50)</label>
+	<input type="checkbox" onchange="updateSnack()" id="c4">
+	<br>
+	
+		<script language="javascript">
+			var roomrent;
+			function calculate(){
+				roomrent=Number(document.getElementById("text1").value);
+				document.getElementById("output").innerHTML=roomrent;
+				
+			}
+			function updateLunch(){
+				var checkbox1=document.getElementById("c1");
+				if(checkbox1.checked==true){
+					document.getElementById("output").innerHTML=Number(document.getElementById("output").innerHTML)+300;
+				}
+				else{
+					document.getElementById("output").innerHTML=Number(document.getElementById("output").innerHTML)-300;
+				}
+			}
+			function updateDinner(){
+				var checkbox2=document.getElementById("c2");
+				if(checkbox2.checked==true){
+					document.getElementById("output").innerHTML=Number(document.getElementById("output").innerHTML)+500;
+				}
+				else{
+					document.getElementById("output").innerHTML=Number(document.getElementById("output").innerHTML)-500;
+				}
+			}
+			function updateBfast(){
+				var checkbox3=document.getElementById("c3");
+				if(checkbox3.checked==true){
+					document.getElementById("output").innerHTML=Number(document.getElementById("output").innerHTML)+100;
+				}
+				else{
+					document.getElementById("output").innerHTML=Number(document.getElementById("output").innerHTML)-100;
+				}
+			}
+
+			function updateSnack(){
+				var checkbox4=document.getElementById("c4");
+				if(checkbox4.checked==true){
+					document.getElementById("output").innerHTML=Number(document.getElementById("output").innerHTML)+50;
+				}
+				else{
+					document.getElementById("output").innerHTML=Number(document.getElementById("output").innerHTML)-50;
+				}
+			}
+
+
+		</script>
+	<lable>
+		Total Amount :
+	</lable>
+	<label id="output"></label>
+		</BODY>
+</HTML>
