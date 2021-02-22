@@ -1,0 +1,110 @@
+<HTML>
+	<HEAD>
+		<TITLE>
+			booking.com
+		</TITLE>
+	<H1>Online Hotel Booking 2</H1>
+
+	</HEAD>
+	<BODY>
+	<lable>
+		Enter Room Charges :
+	</lable>
+	<br>
+	<input type="text" id="text1" onchange="calculate()">
+	<br>
+	<lable>
+		Enter Some additional options :
+	</lable>
+	<br>
+	<label>Lunch(Rs. 300)</label>
+	<input type="checkbox" onchange="updateLunch()" id="c1">
+	<br> 
+	<label>Dinner(Rs. 500)</label>
+	<input type="checkbox" onchange="updateDinner()" id="c2">
+	<br>
+	<label>BreakFast(Rs. 100)</label>
+	<input type="checkbox" onchange="updateBfast()" id="c3">
+	<br>
+	<label>Snacks(Rs. 50)</label>
+	<input type="checkbox" onchange="updateSnack()" id="c4">
+	<br>
+	<label>Male</label><input type="radio" name="Gender" value="Male"><br>
+	<label>Female</label><input type="radio" name="Gender" value="Female"><br>
+	<label>Child</label><input type="radio" name="Group" value="Child"><br>
+	<label>Adult</label><input type="radio" name="Group" value="Adult"><br>
+	<lable>
+		Total Amount :
+	</lable>
+	<label id="output"></label>
+	<br>
+	<lable>
+		Enter Name :
+	</lable>
+	<input type="text" id="text2" onchange="print()">
+	<br>
+	<label>Name : 
+	<p id="page"></p>
+	</label>
+		<script language="javascript">
+			var roomrent,addcharge;
+			function calculate(){
+				roomrent=Number(document.getElementById("text1").value);
+				document.getElementById("output").innerHTML=roomrent;
+				
+			}
+
+			function update(){
+				document.getElementById("output").innerHTML=Number(document.getElementById("output").innerHTML)+addcharge;
+			}
+
+			function updateLunch(){
+				var checkbox1=document.getElementById("c1");
+				if(checkbox1.checked==true){
+					addcharge=300;
+				}
+				else{
+					addcharge=-300;
+				}
+				update();
+			}
+
+				function updateDinner(){
+				var checkbox1=document.getElementById("c2");
+				if(checkbox1.checked==true){
+					addcharge=500;
+				}
+				else{
+					addcharge=-500;
+				}
+				update();
+			}
+			function updateBfast(){
+				var checkbox1=document.getElementById("c3");
+				if(checkbox1.checked==true){
+					addcharge=100;
+				}
+				else{
+					addcharge=-100;
+				}
+				update();
+			}
+			function updateSnack(){
+				var checkbox1=document.getElementById("c4");
+				if(checkbox1.checked==true){
+					addcharge=50;
+				}
+				else{
+					addcharge=-50;
+				}
+				update();
+			}
+
+			function print(){
+				document.getElementById("page").innerHTML=document.getElementById("text2").value;
+			}
+
+		</script>
+	
+		</BODY>
+</HTML>
