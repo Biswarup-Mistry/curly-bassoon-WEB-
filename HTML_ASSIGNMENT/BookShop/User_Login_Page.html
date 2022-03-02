@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>User_Login_Page</title>
+<h1 style="background-color:Orange;">BookStore.com</h1>
+</head>
+<body style="background-color:Moccasin;">
+<p><h3>User_Login_Page of BookStore.com <br>Please, Login with the BookStore.com in order to buy or rent a Book...</h3>
+<h4  style="text-align:right">
+<a href="BookCatalogueWorking1.html">HOME</a>
+</h4>
+</p>
+<table style="width:25%" border="10px">
+<tr><td>Email Id :  <input type="text" id="email" style="width:82.5%"></tr></td>
+<tr><td>Password : <input type="text" id="psw" style="width:82.5%"></tr></td>
+<tr><td><input type="Button" value="  LOG IN  " onclick="login()"></tr></td>
+</table>
+<br>Don't have an account ? Create an account : <input type="Button" id="op" value="  SignIn  " onclick="registration()">
+<br>
+<center p>
+This is the User Log in page of Book Store Assignment given by SG sir.<br>
+Design and created by Biswarup Mistry, Student Id - 2102279, CMSM Sem - 1<br>
+</p>
+<script language="javascript">
+	function login(){
+		var x,y;
+		x=(document.getElementById("email").value);
+		y=(document.getElementById("psw").value);
+		if(x.length==0)
+			alert("Enter the Email Id");
+		else if(y.length==0)
+			alert("Enter The Password");
+		else
+			window.open("BookCatalogueWorking1.html");
+	}
+	function registration(){
+		 window.open("Registration1.html");
+	}
+</script>
+</body>
+</html>

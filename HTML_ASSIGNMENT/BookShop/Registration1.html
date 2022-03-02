@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Registration</title>
+<h1 style="background-color:Orange;" style="color:Tomato; ">BookStore.com</h1>
+</head>
+<body style="background-color:Moccasin;">
+<p><h3>Registration_Page for creating an account in BookStore.com <br>Please, fill up the form of registration for creating a profile or an account for buy or rent a book for the BookStore.com</h3>
+<h4  style="text-align:right">
+<a href="BookCatalogueWorking1.html">HOME</a>
+</h4>
+</p>
+First Name : <input type="text" id="firstname" style="width:20%">  Last Name : <input type="text" id="lastname" style="width:20%"><br>
+Email Id :  <input type="text" id="email" style="width:30%"><br>
+Phone No. : <input type="text" id="phn" style="width:20%">  Password : <input type="text" id="psswrd" style="width:25%"><br>
+Address : <input type="text" id="addss" style="width:30%">  District : <input type="text" id="dist" style="width:20%"><br>
+Pin No. : <input type="text" id="pin" style="width:20%"> 
+<input  type="Button", value="        Submit        " , onclick="submit()"><br>
+<br>
+<center p>
+This is the Registration page of Book Store Assignment given by SG sir.<br>
+Design and created by Biswarup Mistry, Student Id - 2102279, CMSM Sem - 1<br>
+</p>
+<script language="javascript">
+	var i=0,j=0;
+	function submit(){
+		var fname,lname,email,phn,psswrd,addss,dist,pin;
+		
+		fname=(document.getElementById("firstname").value);
+		lname=(document.getElementById("lastname").value);
+		email=(document.getElementById("email").value);
+		phn=(document.getElementById("phn").value);
+		psswrd=(document.getElementById("psswrd").value);
+		addss=(document.getElementById("addss").value);
+		dist=(document.getElementById("dist").value);
+		pin=(document.getElementById("pin").value);
+		if(fname.length!=0 && lname.length!=0 && email.length!=0 && phn.length!=0 && psswrd.length!=0 && addss.length!=0 && dist.length!=0 && pin.length!=0 ){
+			alert("User created Sucessfully !");
+			window.open("User_Login_Page.html");
+			}
+		else
+			alert("Enter the Data(s) !");
+	}
+</script>
+</body>
+</html>

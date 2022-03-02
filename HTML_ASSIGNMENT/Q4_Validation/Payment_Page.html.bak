@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>Payment_Page</title>
+<h1 style="background-color:Orange;">BookStore.com</h1>
+</head>
+<body style="background-color:Moccasin;">
+<p><h3> Payment Page Validation </h3>
+<h4  style="text-align:right">
+<a href="BookCatalogueWorking1.html">HOME</a>
+</h4>
+</p>
+<br>
+<p>Payment by Credit Card :
+</p><br>
+<center form>
+<table style="width:35%" border="10px">
+<tr><td>First Name : <input type="text" id="firstname" style="width:80%"></tr></td>
+<tr><td>Last Name : <input type="text" id="lastname" style="width:80%"></tr></td>
+<tr><td>Credit Card No. (12 digit):  <input type="text" id="crdno" style="width:59%"></tr></td>
+<tr><td>Amount :  <input type="text" id="amount" style="width:83.5%"></tr></td>
+<tr><td>Phone No. : <input type="text" id="phn" style="width:55%">  
+<input  type="Button", value="        Submit        " , onclick="submit()"></tr></td>
+</table>
+</form>
+<br>
+<script language="javascript">
+	function submit(){
+		var fname,lname,crd,phn,v;
+		fname=(document.getElementById("firstname").value);
+		lname=(document.getElementById("lastname").value);
+		crd=(document.getElementById("crdno").value);
+		phn=(document.getElementById("phn").value);
+		v=(document.getElementById("amount").value);
+		
+		if(fname.length!=0 && lname.length!=0 && v.length!=0 && phn.length!=0 && crd.length!=0 ){
+			if(isNaN(crd)){
+				alert("Entert a valid card no.");
+			}
+			else if(crd.length!=12){
+				alert("Enter a 12 digit Card No.");
+			}
+			else if(isNaN(v)){
+				alert("Enter the Amount in Numbers");
+			}
+			else if ((isNaN(phn)){
+				alert("Enter a Valid Phone No.");
+			}
+			else if(phn.length!=10){
+				alert("Enter a Valid Phone Number");
+			}
+			else
+				alert("Transaction by Credit Card Successfull !");			
+		}
+		else
+			alert("Enter the Data(s) !");
+	}
+
+</script>
+<br><center p>
+This is the Payment_Page Validation Assignment given by SG sir.<br>
+Design and created by Biswarup Mistry, Student Id - 2102279, CMSM Sem - 1<br>
+</p>
+</body>
+</html>

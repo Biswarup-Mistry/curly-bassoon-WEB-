@@ -1,0 +1,50 @@
+<html>
+<head>
+<style>
+body {
+  background-image: url("skq8CT.jpg");
+}
+</style>
+<title>User_Login_Page</title>
+<h1 style="color:white; background-color:Blue;">Bank.com</h1>
+</head>
+<body style="background-color:Lightgray;">
+<p><h3>User_Login_Page of Bank.com <br>Please, Login with the Bank.com...</h3>
+<h4  style="text-align:right">
+<a href="home.html">HOME</a>
+</h4>
+</p>
+<table style="width:25%" border="10px">
+<tr><td>Email Id :  <input type="text" id="email" style="width:82.5%"></tr></td>
+<tr><td>Phone No. : <input type="text" id="phn" style="width:82.5%"></tr></td>
+<tr><td>Password : <input type="text" id="psw" style="width:82.5%"></tr></td>
+<tr><td><input type="Button" value="  LOG IN  " onclick="login()"></tr></td>
+</table>
+<br>Don't have an account ? Create an account : <input type="Button" id="op" value="  SignIn  " onclick="registration()">
+<br>
+<center p>
+<br>
+This is the User Login page of Banking Assignment given by SG sir.<br>
+Design and created by Biswarup Mistry, Student Id - 2102279, CMSM Sem - 1<br>
+</p>
+<script language="javascript">
+	function login(){
+		var x,y,z;
+		x=(document.getElementById("email").value);
+		y=(document.getElementById("psw").value);
+		z=(document.getElementById("phn").value);
+		if(x.length==0)
+			alert("Enter the Email Id");
+		else if(z.length==0)
+			alert("Enter The Phone No.");
+		else if(y.length==0)
+			alert("Enter The Password");
+		else
+			window.open("home.html");
+	}
+	function registration(){
+		 window.open("Registration1.html");
+	}
+</script>
+</body>
+</html>

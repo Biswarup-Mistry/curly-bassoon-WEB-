@@ -1,0 +1,73 @@
+<HTML>
+<head>
+<title>Shopping Cart</title>
+<h1 style="background-color:Orange;" style="color:Tomato; ">BookStore.com</h1>
+</head>
+<BODY style="background-color:Moccasin;">
+<p><h3>Shopping Cart Page for add books in BookStore.com <br>Please, write the books name you want in the appropriet box for adding them into the cart of BookStore.com</h3>
+<h4  style="text-align:right">
+<a href="BookCatalogueWorking1.html">HOME</a>
+</h4>
+</p>
+<lable>
+	Enter Item(s) to the Cart :
+</lable>
+<input type="text" id="text1">
+<input type="Button" value="  ADD  " onclick="add()">
+<br>
+<input type="Button" value="DELETE" onclick="remove()">
+
+<select id = "op" multiple>
+	<option value="Empty">
+</select>
+
+<br>
+<input type="Button" value="   Proceed   " onclick="proceed()">
+<script language="javascript">
+	var i=0,j=0;
+	function add(){
+		var x;
+		x=(document.getElementById("text1").value);
+		//y=(document.getElementById("text2").value);
+		if(x.length==0)
+			alert("Enter the Data(s) !");
+		else{
+			opt=new Option(x);
+			document.getElementById("op").options[i]=opt;
+			i++;
+		}
+	}
+
+	function remove(){
+			if(document.getElementById("op").selectedIndex==-1)
+				alert("No Item Selected !");
+			else{
+				ind = document.getElementById("op").selectedIndex+1;
+				while(ind<i){
+					opt=new Option(document.getElementById("op").options[ind].value);
+					document.getElementById("op").options[ind-1]=opt;
+					ind=ind+1;
+				}
+				document.getElementById("op").options[ind-1]=null;
+				i=i-1;
+			}
+		}
+		
+		function proceed(){
+			var x;
+			x=(document.getElementById("text1").value);
+				if(x.length==0)
+					alert("Add something to the Cart !");
+				else
+					window.open("Payment_Page.html");
+		}
+
+	
+</script>
+<br>
+<center p>
+This is the Shopping Cart page of Book Store Assignment given by SG sir.<br>
+Design and created by Biswarup Mistry, Student Id - 2102279, CMSM Sem - 1<br>
+</p>
+</BODY>
+</HTML>

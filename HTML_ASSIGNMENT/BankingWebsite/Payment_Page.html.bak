@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Payment_Page</title>
+<h1 style="color:white; background-color:Blue;">Bank.com</h1>
+</head>
+<body style="background-color:lightgray;">
+<p><h3> Payment Page Bank.com </h3>
+<h4  style="text-align:right">
+<a href="home.html">HOME</a>
+</h4>>
+</p>
+<br>
+<p>Payment by Credit Card :
+</p><br>
+First Name : <input type="text" id="firstname" style="width:20%">  Last Name : <input type="text" id="lastname" style="width:20%"><br>
+Credit Card No. :  <input type="text" id="crdno" style="width:30%"><br>
+Amount :  <input type="text" id="amount" style="width:30%"><br>
+Phone No. : <input type="text" id="phn" style="width:20%">  
+<input  type="Button", value="        Submit        " , onclick="submit()"><br>
+<br>
+<script language="javascript">
+	function submit(){
+		var fname,lname,crd,phn;
+		fname=(document.getElementById("firstname").value);
+		lname=(document.getElementById("lastname").value);
+		crd=(document.getElementById("crdno").value);
+		phn=(document.getElementById("phn").value);
+		v=(document.getElementById("amount").value);
+		if(fname.length!=0 && lname.length!=0 && crd.length!=0 && phn.length!=0 && v.length!=0)
+			window.open("credit_card.html");
+		else
+			alert("Enter the Data(s) !");
+	}
+
+</script>
+<br><center p>
+<br>
+This is the Payment_Page of Banking Assignment given by SG sir.<br>
+Design and created by Biswarup Mistry, Student Id - 2102279, CMSM Sem - 1<br>
+</p>
+</body>
+</html>
+
+

@@ -1,0 +1,64 @@
+<html>
+<head>
+<style>
+body {
+  background-image: url("1414949-amazing-professional-desktop-wallpaper-1920x1080-for-full-hd.jpg");
+}
+</style>
+<title>Home</title>
+<h1 style="color:white; background-color:Blue;text-align:center;">Bank.com</h1>
+</p>
+</head>
+<body style="background-color:lightGray;">
+<p><h3> Home Page of Bank.com</h3>
+<h4  style="text-align:Left">
+<a href="User_Login_Page.html">...LogIn</a>
+<a href="User_Profile_Page.html">...User Profile...</a>
+<a href="BankLoginPage.html">...Admin Login...</a>
+<a href="Account_Detail_Page.html">...Account Details...</a>
+<a href="Fund_Transfer_Page.html">...Fund Transfer...</a>
+</h4>
+</p>
+
+<p>
+Banks are financial institutions that provide a loan or save customer’s money. The term ‘Bank’ is derived from the word ‘Banc’ or ‘Banque,’ which means a bench upon which the ancient day financiers would display their coins or transact their business in the market space.
+Banks are an elemental part of society. Banks are located in different parts of the country and deal directly with the general public. They provide multiple services on customer-based requirements and provide lockers, ATM Services, money transfer, loans for houses and businesses, and several other monetary services.
+Thus, Bank (s)provides primary monetary services that boost the economic development of the country.
+
+<h3>Functions of a Bank</h3>
+The essential function of a bank is to receive deposits. Theses deposits are received as fixed deposits- which have a limited time frame, current deposits- require no interests and are framed mainly for business people and savings bank deposits to encourage savings with a 5 percent interest rate.
+Another primary function of a bank is to lend money through cash credits or loans, overdrafts, or discounting bills. The banks usually charge a higher interest rate while giving money.
+The banks also perform various agency functions that provide services such as remitting funds, sell and purchase shares and bonds, collect and paycheck bills, subscriptions, rents, etc.
+
+<h3>Importance of a Bank</h3>
+A bank helps people cultivate the habit of saving and provides safe custody. It collects bills, drafts, cheques, and grants credit facilities and loans to people. It facilitates making payments and secures the overdrafts and loans.
+A bank also provides safe custody of valuables such as deeds, ornaments, documents, jewels, etc. It also sells and purchases stocks, shares, etc. A bank is essential as it provides Credit information and a Letter of Credit and acts as representatives and makes correspondence.
+
+<h3>Top 10 Indian Banks</h3>
+    1. Bank.com<br>
+    2. Axis Bank<br>
+    3. IDFC Bank<br>
+    4. SBI<br>
+    5. Bank of Baroda<br>
+    6. Punjab National Bank<br>
+    7. ICICI Bank<br>
+    8. Canara Bank<br>
+    9. IDBI Bank<br>
+    10. Bank of India<br>
+
+
+
+</p>
+
+<p>
+<h4  style="text-align:Left">
+<a href="aboutUs.html">About Us</a>
+</h4>
+</p>
+<center p>
+<br>
+This is the Home Page of Banking Assignment given by SG sir.<br>
+Design and created by Biswarup Mistry, Student Id - 2102279, CMSM Sem - 1<br>
+</p>
+</body>
+</html>

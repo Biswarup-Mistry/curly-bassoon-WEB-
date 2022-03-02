@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>Registration</title>
+<h1 style="background-color:Orange;" style="color:Tomato; ">BookStore.com</h1>
+</head>
+<body style="background-color:Moccasin;">
+<p><h3>Registration_Page Validation<br>Please, fill up the form of registration</h3>
+<h4  style="text-align:right">
+<a href="BookCatalogueWorking1.html">HOME</a>
+</h4>
+</p>
+<center form>
+<table style="width:39%" border="05%">
+<tr><td>First Name : <input type="text" id="firstname" style="width:80%"></tr></td>
+<tr><td>Last Name : <input type="text" id="lastname" style="width:80%"></tr></td>
+<tr><td>Email Id :  <input type="text" id="email" style="width:83%"></tr></td>
+<tr><td>Phone No. : <input type="text" id="phn" style="width:80.5%"></tr></td>
+<tr><td>Password (>=6 Digits): <input type="password" id="psswrd" style="width:66%"></tr></td>
+<tr><td>Re-type the Password (>=6 Digits): <input type="password" id="psswrd1" style="width:50.6%"></tr></td>
+<tr><td>Address : <input type="text" id="addss" style="width:82.5%"></tr></td>
+<tr><td>District : <input type="text" id="dist" style="width:83.3%"></tr></td>
+<tr><td>Pin No. (6 digits): <input type="text" id="pin" style="width:55%"> 
+<input  type="Button", value="     Submit     " , onclick="submit()"></tr></td>
+</table>
+</form>
+<br>
+<center p>
+This is the Registration page Validation Assignment given by SG sir.<br>
+Design and created by Biswarup Mistry, Student Id - 2102279, CMSM Sem - 1<br>
+</p>
+<script language="javascript">
+	var i=0,j=0;
+	function submit(){
+		var fname,lname,email,phn,psswrd,addss,dist,pin;
+		
+		//phn=document.myform.phn.value;
+		fname=(document.getElementById("firstname").value);
+		lname=(document.getElementById("lastname").value);
+		email=(document.getElementById("email").value);
+		phn=(document.getElementById("phn").value);
+		psswrd=(document.getElementById("psswrd").value);
+		psswrd1=(document.getElementById("psswrd1").value);
+		addss=(document.getElementById("addss").value);
+		dist=(document.getElementById("dist").value);
+		pin=(document.getElementById("pin").value);
+		if(fname.length!=0 && lname.length!=0 && psswrd1.length!=0 && email.length!=0 && phn.length!=0 && addss.length!=0 && dist.length!=0 && pin.length!=0 ){
+				if(isNaN(phn)){
+					alert("Enter numerics only in Phone No. Section !");
+				}
+				else if(phn.length<10){
+					alert("Enter 10 digit Phone Number");
+				}
+				else if(psswrd.length<6){
+					alert("Password must be atleast 6 characters long !");
+				}
+				else if(isNaN(pin)){
+					alert("Enter Numerics in Pin No.");
+				}
+				else if(pin.length!=6){
+					alert("Enter a Valid Pin of 6 Digits");
+				}
+				else if(psswrd!=psswrd1){
+					alert("Password must be same");
+				}
+				else
+					alert("User created Sucessfully !");
+		}
+		else
+			alert("Enter the Data(s) !");
+	}
+</script>
+</body>
+</html>

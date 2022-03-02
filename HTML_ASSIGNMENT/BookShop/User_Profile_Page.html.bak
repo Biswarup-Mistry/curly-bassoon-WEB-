@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>User_Profile</title>
+<h1 style="background-color:Orange;">BookStore.com</h1>
+</head>
+<body style="background-color:Moccasin;">
+<p><h3> User_Profile Page of an user in BookStore.com </h3></p>
+<table>
+<tr><td>First Name : ABC  Last Name : XYZ<br></tr></td>
+<tr><td>Email Id : example@email.com </tr></td>
+<tr><td>Phone No. : +91 9220XXXX90 </tr></td>
+<tr><td>Password : **password**</tr></td>
+<tr><td>Address : 153 Leninnagar, Garulia   District : 24 PGS (N)</tr></td>
+<tr><td>Pin No. : 743133  </tr></td>
+</table>
+<br><center p>
+This is the User profile/details page of Book Store Assignment given by SG sir.<br>
+Design and created by Biswarup Mistry, Student Id - 2102279, CMSM Sem - 1<br>
+</p>
+</body>
+</html>

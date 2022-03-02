@@ -1,0 +1,181 @@
+<html>
+<head>
+<title>Folder 1</title>
+<div class="header">
+	<p class="b">Photo Gallery</p>
+</div>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+p.a {
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 3px;
+}
+p.b {
+  font: italic bold 30px/50px Georgia, serif;
+}
+
+
+div.polaroid {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+div.container {
+  padding: 10px;
+}
+
+div.gallery {
+  margin: 10px;
+  border: 5px solid #ccc;
+  float: left;
+  width: 250px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 08px;
+  text-align: center;
+}
+
+
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: white;
+  padding: 0.01%;
+  text-align: center;
+}
+
+
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 10%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 85%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+
+ul1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+li a {
+  display: block;
+  width: 80px;
+  background-color: #000000;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #2acaea;
+}
+
+
+</style>
+
+</head>
+
+
+<body style="background-color:lightGray">
+
+<div class="row">
+  <div class="column side">
+    <h2>Folders</h2>
+	<ul1>
+	  <li><a href="photoGalarry.html">Back</a></li>
+	</ul1>
+	
+  </div>
+
+  <div class="column middle">
+    <h2>Folder 1 Contents</h2>
+			
+				<div class="gallery">
+					<div class="polaroid">
+					  <a target="_blank" href="batman-day-2020-1920x1536.html">
+						<img src="batman_day_2020_1920x1536.png" alt="Batman1" width="600" height="400">
+					  </a>
+					  <div class="container">
+					  <div class="desc">batman-day-2020-1920x1536.png</div></div>
+					</div>
+				</div>
+						
+			<div class="gallery">
+				<div class="polaroid">
+				  <a target="_blank" href="batman-v-superman-prequel-featured.html">
+					<img src="batmanvsupermanprequelfeatured.jpg" alt="Batman2" width="600" height="400">
+				  </a>
+				  <div class="container">
+				  <div class="desc">batman-v-superman-prequel-featured.jpg</div></div>
+				</div>
+			</div>
+
+			<div class="gallery">
+				<div class="polaroid">
+			  <a target="_blank" href="batman-throwing-batarangs-image.html">
+				<img src="batman-throwing-batarangs-image.webp" alt="Batman3" width="600" height="400">
+			  </a>
+			  <div class="container">
+			  <div class="desc">batman-throwing-batarangs-image.webp</div></div>
+			</div>
+			</div>
+</div>
+
+<p class="a"><br>This is the Photo Gallery Folder 1 Page Assignment given by SG sir.<br>
+Design and created by Biswarup Mistry, Student Id - 2102279, CMSM Sem - 1<br></p>
+</body>
+</html>

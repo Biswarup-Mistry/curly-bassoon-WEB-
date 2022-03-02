@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>Registration</title>
+<h1 style="color:white; background-color:Blue;"  >Bank.com</h1>
+</head>
+<body style="background-color:Lightgray;">
+<p><h3>Registration_Page for creating an account in Bank.com <br>Please, fill up the form of registration for creating a profile or an account for Bank.com</h3>
+<h4  style="text-align:right">
+<a href="home.html">HOME</a>
+</h4>>
+</p>
+<center form>
+<table style="width:50%" border="05px">
+<tr><td>First Name : <input type="text" id="firstname" style="width:35%" onfocus="focusevent1()">  
+Last Name : <input type="text" id="lastname" style="width:35%" onfocus="focusevent2()"></tr></td>
+<tr><td>Email Id :  <input type="text" id="email" style="width:85.5%" onfocus="focusevent3()"></tr></td>
+<tr><td>Account No. : <input type="text" id="acc" style="width:81.6%" onfocus="focusevent9()"></tr></td>
+<tr><td>Phone No. : <input type="text" id="phn" style="width:83.6%" onfocus="focusevent4()"></tr></td>
+<tr><td>Password : <input type="text" id="pswd" style="width:84.6%" onfocus="focusevent8()"></tr></td>
+<tr><td>Address : <input type="text" id="addss" style="width:40%" onfocus="focusevent5()">
+District : <input type="text" id="dist" style="width:36%" onfocus="focusevent6()"></tr></td>
+<tr><td>Pin No. : <input type="text" id="pin" style="width:70%" onfocus="focusevent7()"> 
+<input  type="Button", value="       Submit       " , onclick="submit()"></tr></td>
+</table>
+</form>
+<br>
+<center p>
+<br>
+This is the Registration page of Banking Assignment given by SG sir.<br>
+Design and created by Biswarup Mistry, Student Id - 2102279, CMSM Sem - 1<br>
+</p>
+<script language="javascript">
+	var i=0,j=0;
+	function submit(){
+		var fname,lname,email,phn,addss,dist,pin,acc;
+		acc=(document.getElementById("acc").value);
+		fname=(document.getElementById("firstname").value);
+		lname=(document.getElementById("lastname").value);
+		email=(document.getElementById("email").value);
+		phn=(document.getElementById("phn").value);
+		pswd=(document.getElementById("pswd").value);
+		addss=(document.getElementById("addss").value);
+		dist=(document.getElementById("dist").value);
+		pin=(document.getElementById("pin").value);
+		if(fname.length!=0 && lname.length!=0 && acc.length!=0 && email.length!=0 && pswd.length!=0 && phn.length!=0 && addss.length!=0 && dist.length!=0 && pin.length!=0 ){
+			alert("User created Sucessfully !");
+			window.open("User_Login_Page.html");
+			}
+		else
+			alert("Enter the Data(s) !");
+	}
+	
+	function focusevent1(){
+		document.getElementById("firstname").style.background=" orange";
+	}
+	
+	function focusevent2(){
+		document.getElementById("lastname").style.background=" orange";
+	}
+	function focusevent3(){		
+		document.getElementById("email").style.background=" orange";		
+	}
+	function focusevent4(){
+		document.getElementById("phn").style.background=" orange";
+	}
+	function focusevent5(){
+		document.getElementById("addss").style.background=" orange";
+	}
+	function focusevent6(){
+		document.getElementById("dist").style.background=" orange";
+	}
+	function focusevent7(){
+		document.getElementById("pin").style.background=" orange";
+	}
+	function focusevent8(){
+		document.getElementById("pswd").style.background=" orange";
+	}
+	function focusevent9(){
+		document.getElementById("acc").style.background=" orange";
+	}
+	
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+<head>
+<style>
+body {
+  background-image: url("skq8CT.jpg");
+}
+</style>
+<title>Home</title>
+<h1 style="color:white; background-color:Blue;text-align:center;">Bank.com</h1>
+</p>
+</head>
+<body style="background-color:lightGray;">
+<h4  style="text-align:right">
+<a href="home.html">HOME</a>
+</h4>
+<p>
+<center form>
+<h1 style="color:blue">Who We Are</h1>
+<h2 style="color:blue">About Us</h2>
+
+    <img src="award-2019.jpg"    style="width:20%;">
+Bank.com is one of India’s leading private banks and was among the first to receive approval from the Reserve Bank of India (RBI) to set up a private sector bank in 1994.
+Today, Bank.com has a banking network of 5,653 branches and 16,291 ATM's in 2,917 cities/towns.
+<h2 style="color:blue">Retail Banking</h2>
+    <img src="our_businesses_retail_content1.webp"    style="width:20%;">
+Bank.com offers a diverse range of financial products and banking services to customers through a growing branch and ATM network and digital channels such as Netbanking, Phonebanking and MobileBanking.
+<h2 style="color:blue">Wholesale Banking</h2>
+    <img src="our_businesses_wholesale_content1.webp"    style="width:20%;">
+Bank.com offers a wide gamut of commercial and transactional banking services to businesses and organizations of all sizes. Our services include working capital finance, trade services, transactional services and cash management.
+<h2 style="color:blue">Treasury</h2>
+    <img src="our_businesses_treasury_content1.webp"    style="width:20%;">
+Under our treasury services, we help businesses generate better returns on their funds and manage financial risk. We focus on three main product areas: foreign exchange and derivatives, local currency money market and debt securities, and equities.
+</p>
+</form>
+<center p>
+<br>
+This is the About Us Page of Banking Assignment given by SG sir.<br>
+Design and created by Biswarup Mistry, Student Id - 2102279, CMSM Sem - 1<br>
+</p>
+</body>
+</html>

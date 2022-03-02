@@ -1,0 +1,140 @@
+<html>
+<head>
+<title>Photo_Gallery</title>
+<div class="header">
+	<p class="b">Photo Gallery</p>
+</div>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+p.a {
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 3px;
+}
+
+p.b {
+  font: italic bold 30px/50px Georgia, serif;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: white;
+  padding: 0.01%;
+  text-align: center;
+}
+
+
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 10%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 85%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+
+ul1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+li a {
+  display: block;
+  width: 80px;
+  background-color: #000000;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #2acaea;
+}
+
+</style>
+
+</head>
+
+
+<body style="background-color:lightGray">
+
+
+
+<div class="row">
+  <div class="column middle">
+    <p class="b">Folders</p>
+	<ul1>
+	  <li><a href="Folder1.html">Folder 1</a></li>
+	  <li><a href="Folder2.html">Folder 2</a></li>
+	</ul1>
+	
+  </div>
+</div>
+
+<p class="a"><br>This is the Photo Gallery Home Page Assignment given by SG sir.<br>
+Design and created by Biswarup Mistry, Student Id - 2102279, CMSM Sem - 1<br></p>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<html>
+<head>
+<style>
+body {
+  background-image: url("skq8CT.jpg");
+}
+</style>
+<title>Fund_Transfer_Page</title>
+<h1 style="color:white; background-color:Blue;">Bank.com</h1>
+</head>
+<body style="background-color:lightgray;">
+<p><h3>Fund Transfer Page of an user in Bank.com </h3>
+<h4  style="text-align:right">
+<a href="home.html">HOME</a>
+</h4>
+</p>
+<center Form>
+<table style="width:25%" border="05px"><tr><td>
+<tr><td>Account No. : <input type="text" id="acc" style="width:68%" onfocus="focusevent1()"></tr></td>
+<tr><td>Amount : <input type="text" id="amnt" style="width:45%" onfocus="focusevent2()">
+<input  type="Button", value="       Submit       " , onclick="submit()"></tr></td>
+</table>
+<p id="para" style="Color:Green;"></p>
+</form>
+<script language="javascript">
+	//var i=0,j=0;
+	function submit(){
+		var fname,lname,email,phn,addss,dist,pin,acc;
+		acc=(document.getElementById("acc").value);
+		amnt=(document.getElementById("amnt").value);
+		if(acc.length!=0 && amnt.length!=0){
+			alert("Amount Transfert Sucessfully to account : "+amnt);
+			close("Fund_Transfer_Page.html");
+			window.open("TransactionDetailPage.html");
+			}
+		else
+			alert("Enter the Data(s) !");
+	}
+	function focusevent1(){
+		document.getElementById("acc").style.background=" orange";
+	}
+	
+	function focusevent2(){
+		document.getElementById("amnt").style.background=" orange";
+	}
+</script>
+
+
+<br><center p>
+<br>
+This is the Fund Transfer Page of Banking Assignment given by SG sir.<br>
+Design and created by Biswarup Mistry, Student Id - 2102279, CMSM Sem - 1<br>
+</p>
+</body>
+</html>
