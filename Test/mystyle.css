@@ -1,0 +1,59 @@
+/* {
+  box-sizing: border-box;
+}*/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 05px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+
+article {
+  float: left;
+  padding: 20px;
+  width: 100%;
+  background-color: #f1f1f1;
+  /*height: 300px;  only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+.container {
+    display: flex; /* Enables flexbox layout for children */
+    align-items: center; /* Vertically centers the items */
+    gap: 20px; /* Adds space between the image and the text */
+    /* Optional: Add padding and a background for styling */
+    padding: 20px;
+    background-color: #f1ff1;
+}
+
+.container img {
+    width: 200px; /* Adjust the image width as needed */
+    height: auto;
+}
+
+.text-content {
+    /* The text content will automatically take the remaining space */
+    flex: 1; 
+}
