@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Testing Website</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                margin: 0px;
+                padding: 0px;
+            }
+            header{
+                background-color: black;
+                padding: 20px;
+                text-align: center;
+                color: white;
+            }
+            h1{
+                text-align: center;
+                background-color: black;
+                color: white;
+                padding: 20px;
+            }
+            ul{
+                list-style-type: none;
+                background-color: black;
+                margin: 0px;
+                padding: 0px;
+                display: flex;
+                text-align: center;
+                overflow: hidden;
+            }
+            ul li{
+                float: left;
+            }
+            ul li a{
+                display: block;
+                color:white;
+                background-color: rgb(49, 49, 48);
+                padding: 20px 20px;
+                text-align: center;
+                text-decoration: none;
+            }
+            ul li a:hover{
+                background-color: black;
+                color: green;
+            }
+      
+            footer{
+                background-color: gray;
+                padding: 20px;
+                margin: 0px;
+                text-align: center;
+                text-decoration: none;
+            }
+            div{
+                /*background-image: url('https://cdn.esquireindia.co.in/article/2025-08-11T14%3A35%3A30.664Z-batman2LEAD%20%281%29.jpg');*/
+                margin:10px;
+                padding: 10px;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>The Testing Website</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+
+        <div style="display: flex;gap:20px;">
+            <form>
+                <label for="fname">First Name:</label><label for="fname">Last Name:</label><br>
+                <input type="text" id="text1" placeholder="Enter First Name"><input type="text" id="text1" placeholder="Enter First Name"><br>
+                <label for="Email">Enter Your Email:</label><br>
+                <input type="email" id="mail1" placeholder="Enter Email Id"><br>
+                <label for="password">Enter Your password:</label><br>
+                <input type="password" id="mail1" placeholder="Enter password"><br><br>
+                <input type="submit" style="padding:10px;" value="Submit">
+            </form>
+            <form>
+                <input type="text" id="fact" placeholder="Enter a number"><br>
+                <input type="button" style="padding:10px;" value="Factorial" onclick="fact1()"><br>
+                <input type="text" id="display" readonly>
+            </form>
+        </div>
+        <section style="display: flex;">
+            <article style="padding:20px;display: flex;"><p style="width: 50%;">
+                Batman[b] is a superhero who appears in American comic books published by DC Comics. Batman was created by writer Bill Finger and artist Bob Kane, and debuted in the 27th issue of the comic book Detective Comics on March 30, 1939. In the DC Universe, Batman is the alias of Bruce Wayne, a wealthy American playboy, philanthropist, and industrialist who resides in the fictional Gotham City. His origin story features him swearing vengeance against criminals after witnessing the murder of his parents, Thomas and Martha, as a child, a vendetta tempered by the ideal of justice. He trains himself physically and intellectually, crafts a bat-inspired persona, and monitors the Gotham streets at night. Kane, Finger, and other creators accompanied Batman with supporting characters, including his sidekicks Robin and Batgirl; allies Alfred Pennyworth and James Gordon; love interest and occasional adversary Catwoman; as well as foes such as the Penguin, the Riddler, Two-Face, and his archenemy, the Joker.
+                Kane conceived Batman in early 1939 to capitalize on the popularity of Superman; although Kane frequently claimed sole creation credit, Finger substantially developed the concept from a generic superhero into something more bat-like. They drew inspiration from pulp fiction characters like the Shadow, Sherlock Holmes, and the Green Hornet. Batman received a spin-off publication, Batman, in 1940. Kane and Finger introduced Batman as a ruthless vigilante who frequently killed or maimed criminals, but he evolved into a just, tempered superhero with a stringent moral code that prohibits killing during the 1940s. Unlike most superheroes, Batman does not possess any superpowers, instead relying on his intellect, fighting skills, and wealth. The 1960s Batman television series used a camp aesthetic, which continued to be associated with Batman for years after it ended. Various creators worked to return Batman to his darker roots in the 1970s and 1980s, culminating with the 1986 miniseries The Dark Knight Returns by Frank Miller.
+            </p>
+            <img style="width: 50%;" src="https://cdn.esquireindia.co.in/article/2025-08-11T14%3A35%3A30.664Z-batman2LEAD%20%281%29.jpg">
+            </article>
+        </section>
+        <section style="background-image: url('https://cdn.esquireindia.co.in/article/2025-08-11T14%3A35%3A30.664Z-batman2LEAD%20%281%29.jpg');">
+        <section style="display: flex;">
+            <article style="padding:20px;display: flex;"><p style="padding:20px 20px;width: 50%;color:wheat">
+                Batman[b] is a superhero who appears in American comic books published by DC Comics. Batman was created by writer Bill Finger and artist Bob Kane, and debuted in the 27th issue of the comic book Detective Comics on March 30, 1939. In the DC Universe, Batman is the alias of Bruce Wayne, a wealthy American playboy, philanthropist, and industrialist who resides in the fictional Gotham City. His origin story features him swearing vengeance against criminals after witnessing the murder of his parents, Thomas and Martha, as a child, a vendetta tempered by the ideal of justice. He trains himself physically and intellectually, crafts a bat-inspired persona, and monitors the Gotham streets at night. Kane, Finger, and other creators accompanied Batman with supporting characters, including his sidekicks Robin and Batgirl; allies Alfred Pennyworth and James Gordon; love interest and occasional adversary Catwoman; as well as foes such as the Penguin, the Riddler, Two-Face, and his archenemy, the Joker.
+                Kane conceived Batman in early 1939 to capitalize on the popularity of Superman; although Kane frequently claimed sole creation credit, Finger substantially developed the concept from a generic superhero into something more bat-like. They drew inspiration from pulp fiction characters like the Shadow, Sherlock Holmes, and the Green Hornet. Batman received a spin-off publication, Batman, in 1940. Kane and Finger introduced Batman as a ruthless vigilante who frequently killed or maimed criminals, but he evolved into a just, tempered superhero with a stringent moral code that prohibits killing during the 1940s. Unlike most superheroes, Batman does not possess any superpowers, instead relying on his intellect, fighting skills, and wealth. The 1960s Batman television series used a camp aesthetic, which continued to be associated with Batman for years after it ended. Various creators worked to return Batman to his darker roots in the 1970s and 1980s, culminating with the 1986 miniseries The Dark Knight Returns by Frank Miller.
+            </p>
+            <img style="width: 50%;" src="https://cdn.esquireindia.co.in/article/2025-08-11T14%3A35%3A30.664Z-batman2LEAD%20%281%29.jpg">
+            </article>
+        </section>
+        <footer>            
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </footer>
+        <script>
+            function fact1(){
+            var k=Number(document.getElementById("fact").value);
+            let a=1;
+            if(!Number.isNaN(k) && k>0){
+                for(let i=1;i<=k;i++){
+                    a=a*i;
+                }
+                document.getElementById("display").value=a;
+            }
+            else{
+                alert("Enter a valid number");
+            }
+        }
+        </script>
+    </body>
+</html>
